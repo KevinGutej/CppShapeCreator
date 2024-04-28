@@ -14,6 +14,15 @@ void printSquare(int side)
     }
 }
 
+void printTriangle(int height) {
+    for (int i = 0; i < height; ++i) {
+        for (int j = 0; j <= i; ++j) {
+            cout << "# ";
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     cout << "Choose a shape to print:" << endl;
@@ -46,6 +55,7 @@ int main()
         int height;
         cout << "Enter the height of the triangle: ";
         cin >> height;
+        printTriangle(height);
         break;
     }
     default:
