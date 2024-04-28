@@ -2,6 +2,18 @@
 
 using namespace std;
 
+void printSquare(int side)
+{
+    for (int i = 0; i < side; ++i)
+    {
+        for (int j = 0; j < side; ++j)
+        {
+            cout << "# ";
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     cout << "Choose a shape to print:" << endl;
@@ -26,6 +38,7 @@ int main()
         int side;
         cout << "Enter the side length of the square: ";
         cin >> side;
+        printSquare(side);
         break;
     }
     case 3:
